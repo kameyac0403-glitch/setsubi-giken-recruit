@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>株式会社設備技研｜採用情報</title>
+<style>
+:root{
+  --blue:#06479d; --deep:#06377f; --cyan:#0aa6e8; --ink:#07172e;
+  --pale:#f2faff; --line:#d7e8f6; --card:#fff; --shadow:0 10px 28px rgba(13,74,126,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;background:#fff;line-height:1.8}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+.section-kicker{font-weight:800;letter-spacing:.08em;color:#1398df;font-size:15px}
+h1,h2,h3,p{margin-top:0}
+h2{color:var(--deep);font-size:clamp(30px,4vw,50px);line-height:1.35;letter-spacing:.02em}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:8px;padding:15px 25px;font-weight:800}
+.btn-primary{background:linear-gradient(90deg,#0876da,#06479d);color:white}
+
+/* SECTION 01 */
+.hero{position:relative;min-height:890px;overflow:hidden;background:linear-gradient(120deg,#062f75 0 48%,#087dc4 100%)}
+.hero-bg{position:absolute;inset:0;background:
+ linear-gradient(110deg,rgba(2,42,104,.98) 0 43%,rgba(4,69,148,.80) 58%,rgba(0,88,165,.12) 76%),
+ url("assets/section01-equipment-background.jpg") center/cover no-repeat}
+.hero-person-field{position:absolute;right:0;top:0;width:58%;height:100%;pointer-events:none}
+.hero-worker{position:absolute;right:0;top:20px;width:88%;height:54%;object-fit:contain;object-position:right top}
+.hero-office{position:absolute;right:0;bottom:62px;width:65%;height:48%;object-fit:contain;object-position:right bottom}
+.hero-content{position:relative;z-index:2;padding:44px 0 145px;color:#fff;width:60%}
+.ribbon{display:inline-block;background:linear-gradient(90deg,#0877d8,#0750ae);padding:8px 18px;font-weight:800;margin:25px 0 28px}
+.hero h1{font-size:clamp(46px,6vw,78px);line-height:1.22;margin-bottom:28px;letter-spacing:.03em}
+.hero-copy{font-weight:700;font-size:18px;line-height:2}
+.hero-badges{position:absolute;z-index:4;left:50%;transform:translateX(-50%);bottom:46px;width:min(1120px,calc(100% - 48px));display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.badge{background:white;color:var(--deep);padding:18px;border-radius:6px;box-shadow:var(--shadow);display:flex;gap:15px;align-items:center}
+.icon{width:54px;height:54px;border-radius:50%;background:#edf7ff;display:grid;place-items:center;font-size:28px;flex:none}
+.badge b{font-size:23px;display:block}.badge small{font-weight:700}
+
+/* SECTION 02 */
+.fit{position:relative;padding:70px 0 78px;background:linear-gradient(180deg,#f9fdff,#eaf7ff);overflow:hidden}
+.fit::before{content:"";position:absolute;inset:0;background:url("assets/section02-background.jpg") center/cover no-repeat;opacity:.08}
+.fit .wrap{position:relative}
+.fit-title{max-width:820px;margin:25px auto 35px}
+.fit-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.fit-card{background:rgba(255,255,255,.96);border-radius:14px;box-shadow:var(--shadow);padding:26px 18px;text-align:center;min-height:235px}
+.line-icon{font-size:45px;color:#0870d7;margin-bottom:16px}
+.fit-card p{font-weight:800;line-height:1.75}
+.fit-note{margin-top:25px;background:white;border-radius:14px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.25fr .75fr;overflow:hidden;align-items:center}
+.fit-note strong{color:var(--deep);font-size:21px;padding:24px 34px}
+.fit-note img{height:125px;width:100%;object-fit:cover}
+
+/* SECTION 03 */
+.reasons{padding:70px 0 90px;background:linear-gradient(180deg,#f8fdff,#eef8fd)}
+.reasons-head{display:grid;grid-template-columns:1.1fr .9fr;align-items:end;gap:30px;margin-bottom:35px}
+.reasons-head-media{position:relative;height:280px}
+.reasons-head-bg{position:absolute;inset:0;background:url("assets/section03-header-background.jpg") center/cover;border-radius:0 0 0 80px}
+.reasons-head-worker{position:absolute;inset:auto 4% 0 auto;height:105%;object-fit:contain}
+.reason-list{display:grid;gap:22px}
+.reason{display:grid;grid-template-columns:145px 1fr 330px;gap:28px;background:white;border-radius:14px;padding:25px;box-shadow:var(--shadow);align-items:center}
+.reason-no{height:100%;border-right:1px solid #c9ddec;color:var(--deep);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.reason-no span{font-size:13px;font-weight:900;letter-spacing:.08em}.reason-no b{font-size:52px;line-height:1.1}.reason-no i{font-style:normal;font-size:42px;margin-top:20px}
+.reason h3{color:var(--deep);font-size:27px;margin-bottom:12px}
+.reason p{font-weight:600;margin:0}
+.reason-photo{height:220px;width:100%;object-fit:cover;border-radius:7px}
+
+/* MOBILE */
+@media(max-width:760px){
+ .wrap{width:min(100% - 32px,680px)}
+ .hero{min-height:auto;padding-bottom:28px;background:#063c89}
+ .hero-bg{background:linear-gradient(180deg,rgba(2,47,112,.22),rgba(2,47,112,.95) 54%),url("assets/section01-equipment-background.jpg") 65% top/auto 48% no-repeat}
+ .hero-person-field{position:relative;width:100%;height:390px;z-index:1}
+ .hero-worker{width:100%;height:330px;right:-8%;top:0}
+ .hero-office{width:56%;height:220px;right:-2%;bottom:0}
+ .hero-content{width:100%;padding:28px 0 12px}
+ .hero h1{font-size:42px;line-height:1.25}
+ .hero-copy{font-size:15px}
+ .hero-badges{position:relative;left:auto;transform:none;bottom:auto;width:calc(100% - 32px);margin:20px auto 0;grid-template-columns:1fr}
+ .badge{padding:14px}.badge b{font-size:20px}
+ .fit{padding:55px 0}
+ .fit-title{margin:18px 0 28px}
+ .fit-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;gap:12px}
+ .fit-card{min-width:78%;scroll-snap-align:center;min-height:220px}
+ .fit-note{grid-template-columns:1fr}.fit-note strong{padding:22px}.fit-note img{height:160px}
+ .reasons{padding:55px 0}
+ .reasons-head{grid-template-columns:1fr}
+ .reasons-head-media{height:230px}
+ .reason{grid-template-columns:74px 1fr;padding:18px;gap:16px}
+ .reason-no{grid-row:1/3}.reason-no b{font-size:38px}.reason-no i{font-size:30px}
+ .reason h3{font-size:22px}
+ .reason-photo{grid-column:2;height:190px;order:3}
+}
+</style>
+</head>
+<body>
+
+<section class="hero" id="section01">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-person-field" aria-hidden="true">
+    <img class="hero-worker" src="assets/section01-worker-transparent.png" alt="">
+    <img class="hero-office" src="assets/section01-office-woman-transparent.png" alt="">
+  </div>
+  <div class="wrap hero-content">
+    <div class="section-kicker">SECTION 01</div>
+    <div class="ribbon">はじめてでも、プロになれる場所がある。</div>
+    <h1>工具の名前も<br>知らなかった人が、<br>ここでは<br>【できる人】になる。</h1>
+    <p class="hero-copy">沖縄で給排水・空調・消火の設備工事を手がける設備技研。<br>
+    経験は問いません。面接は1回。<br>
+    先輩が隣について、少しずつ「できること」を増やしていける。<br>
+    未経験からでも、ちゃんと育つ会社です。</p>
+  </div>
+  <div class="hero-badges">
+    <div class="badge"><div class="icon">●</div><div><b>未経験歓迎</b><small>経験・資格は不要</small></div></div>
+    <div class="badge"><div class="icon">▣</div><div><b>面接1回</b><small>スピード選考</small></div></div>
+    <div class="badge"><div class="icon">↗</div><div><b>月給20万円〜</b><small>頑張りをしっかり評価</small></div></div>
+  </div>
+</section>
+
+<section class="fit" id="section02">
+ <div class="wrap">
+  <div class="section-kicker">SECTION 02</div>
+  <div class="fit-title"><h2>ひとつでも当てはまれば、<br>まず話を聞きに来てください。</h2></div>
+  <div class="fit-grid">
+   <article class="fit-card"><div class="line-icon">🔧</div><p>資格も経験もないけど、<br>手に職をつけたい</p></article>
+   <article class="fit-card"><div class="line-icon">♙</div><p>今の仕事に、<br>なんとなく物足りなさを<br>感じている</p></article>
+   <article class="fit-card"><div class="line-icon">↗</div><p>フリーターから<br>正社員を目指したい</p></article>
+   <article class="fit-card"><div class="line-icon">⌖</div><p>地元・沖縄で、<br>長く続けられる<br>仕事を探している</p></article>
+   <article class="fit-card"><div class="line-icon">✕</div><p>「盗んで覚えろ」と<br>言われる職場が苦手</p></article>
+  </div>
+  <div class="fit-note">
+   <strong>今活躍している先輩たちも、<br>みんな同じところからのスタートでした。</strong>
+   <img src="assets/section02-team.jpg" alt="設備技研で働く先輩社員">
+  </div>
+ </div>
+</section>
+
+<section class="reasons" id="section03">
+ <div class="wrap">
+  <div class="reasons-head">
+   <div><div class="section-kicker">SECTION 03 ｜ 設備技研が選ばれる理由</div>
+   <h2>設備技研はここが凄い！<br><span style="color:#111">働きやすさの改善に<br>本気で取り組んでいます</span></h2></div>
+   <div class="reasons-head-media"><div class="reasons-head-bg"></div><img class="reasons-head-worker" src="assets/section03-worker-transparent.png" alt=""></div>
+  </div>
+
+  <div class="reason-list">
+   <article class="reason">
+    <div class="reason-no"><span>REASON</span><b>01</b><i>♙</i></div>
+    <div><h3>面接1回・経験不問</h3><p>今のスキルや経験は問いません。<br>工具の名前がひとつもわからない状態から入社した先輩もいます。<br>先輩がマンツーマンでつくので、段階を踏んで成長できます。<br>未経験からでも安心してスタートできます。</p></div>
+    <img class="reason-photo" src="assets/reason01.jpg" alt="先輩社員から仕事を教わる様子">
+   </article>
+   <article class="reason">
+    <div class="reason-no"><span>REASON</span><b>02</b><i>♡</i></div>
+    <div><h3>4連休が取れる</h3><p>週休2日＋有休で4連休も可能。<br>休日と有給を組み合わせれば4連休も可能です。<br>プライベートが充実していないと、仕事にも全力投球できない。<br>休日と有休を組み合わせれば4連休も取得可能です。</p></div>
+    <img class="reason-photo" src="assets/reason02.jpg" alt="休日を楽しむ社員">
+   </article>
+   <article class="reason">
+    <div class="reason-no"><span>REASON</span><b>03</b><i>↗</i></div>
+    <div><h3>月給20万円〜、頑張った分だけ評価</h3><p>月収20万円〜、能力に応じて昇給。<br>脱フリーターを目指す方も、キャリアチェンジしたい方も。<br>実力に応じてしっかり評価する仕組みがあります。</p></div>
+    <img class="reason-photo" src="assets/reason03.jpg" alt="設備技研の若手社員">
+   </article>
+   <article class="reason">
+    <div class="reason-no"><span>REASON</span><b>04</b><i>♧</i></div>
+    <div><h3>「盗んで覚えろ」文化はありません</h3><p>先輩社員がツーマンセルでフォローする体制のもと、<br>知識・技術を順序立てて教えます。<br>わからないことを聞きやすい空気づくりを、会社として大切にしています。</p></div>
+    <img class="reason-photo" src="assets/reason04.jpg" alt="図面を見ながら相談する社員">
+   </article>
+   <article class="reason">
+    <div class="reason-no"><span>REASON</span><b>05</b><i>▤</i></div>
+    <div><h3>資格取得も会社がサポート</h3><p>1級管工事施工管理技士、建築設備士など、<br>現場で役立つ資格取得を支援。<br>手に職をつけながら長く働けます。</p></div>
+    <img class="reason-photo" src="assets/reason05.jpg" alt="資格取得に向けて勉強する社員">
+   </article>
+  </div>
+ </div>
+</section>
+
+<!--
+画像レイヤー用ファイル名：
+assets/section01-equipment-background.jpg
+assets/section01-worker-transparent.png
+assets/section01-office-woman-transparent.png
+assets/section02-background.jpg
+assets/section02-team.jpg
+assets/section03-header-background.jpg
+assets/section03-worker-transparent.png
+assets/reason01.jpg ～ reason05.jpg
+
+人物PNGは背景透過で書き出すと、元デザインに近い斜め構成・重なりをCSS側で自由に調整できます。
+-->
+</body>
+</html>
